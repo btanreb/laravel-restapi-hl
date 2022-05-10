@@ -29,9 +29,6 @@ class ProductController extends Controller
      */
     public function index()
     {
-        // return $this->productRepository->getAll();
-        // return response()->json(['gg' => $this->productRepository->getAll()], 200);
-
         return $this->response(
             'All products',
             $this->productRepository->getAll()->toArray()
