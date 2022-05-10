@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+echo -e "`ip route|awk '/default/ { print $3 }'`\thost.docker.internal" >> /etc/hosts
